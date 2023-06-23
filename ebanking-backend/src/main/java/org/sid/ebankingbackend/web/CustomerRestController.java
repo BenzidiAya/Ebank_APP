@@ -20,6 +20,10 @@ public class CustomerRestController {
     }
 
     //@PathVariable liera la valeur de l'identifiant du client spécifier dans le chemin à la variable customerId.
+    @GetMapping("/customers/search")
+    List<CustomerDTO> searchCustomers(@RequestParam(name = "keyword", defaultValue = "") String keyword) {
+        return bankAccountService.searchCustomers("%"+keyword+"%");
+    }
     @GetMapping("/customers/{id}")
     public CustomerDTO getCustomer(@PathVariable(name = "id") Long customerId) throws CustomerNotFoundException, CustomerNotFoundException {
         return bankAccountService.getCustomer(customerId);
