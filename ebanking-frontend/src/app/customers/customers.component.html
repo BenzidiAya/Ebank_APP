@@ -8,7 +8,9 @@
             <div class="input-group">
               <label class="input-group-text">Keyword :</label>
               <input type="text" formControlName="keyword" class="form-control">
-              <button class="btn btn-info">Search</button>
+              <button class="btn btn-info">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
           </form>
         </div>
@@ -23,6 +25,16 @@
             <td>{{c.id}}</td>
             <td>{{c.name}}</td>
             <td>{{c.email}}</td>
+            <td>
+              <div class="d-flex justify-content-start">
+                <button class="btn btn-light btn-action me-4" routerLink="/editCustomer">
+                  <i class="bi bi-pencil-fill"></i>
+                </button>
+                <button class="btn btn-danger btn-action me-4" (click)="handleDeleteCustomer(c)">
+                  <i class="bi bi-trash-fill"></i>
+                </button>
+              </div>
+            </td>
           </tr>
           </tbody>
         </table>
