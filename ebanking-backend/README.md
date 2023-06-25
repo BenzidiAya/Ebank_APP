@@ -32,15 +32,15 @@ chaque compte appartient à un client. un compte peut subir plusieurs opération
 <img src="images/p2i4delete.png">
 <h3>Le test de CustomerRestController et BankAccountRestController avec SWAGGER</h3>
 <img src="images/p2i5swagger.png">
-<h4>CustomerRestController</h4>
+<h3>CustomerRestController</h3>
 <img src="images/swaggerget.png">
 <img src="images/p2swaggergetid.png">
 <img src="images/p2swaggerpost.png">
 <img src="images/p2swaggerdelete.png">
-<h4>BankAccountRestController</h4>
+<h3>BankAccountRestController</h3>
 <img src="images/p2swaggergetA.png">
 <img src="images/p2swaggergetidA.png">
-<h4>Importation de la documentation de Api Restful dans Insomnia </h4>
+<h3>Importation de la documentation de Api Restful dans Insomnia </h3>
 <img src="images/p2docimport.png">
 
 
