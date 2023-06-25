@@ -4,10 +4,10 @@ Cette application utilise le framework Spring Boot, réputé pour sa structure s
 chaque compte appartient à un client. un compte peut subir plusieurs opérations de type DEBIT ou CREDIT. Il existe deux types de comptes : Comptes courants et comptes épargnes.</p>
 <h2>part1:La couche DAO</h2>
 <ol>
-<li>1. Création d'un projet Spring Boot</li>
-<li>2. Création des entités JPA : Customer, BankAccount, Saving Account, CurrentAccount, AccountOperation</li>
-<li>3. Création des interfaces JPA Repository basées sur Spring Data</li>
-<li>4. Le Test de la couche DAO</li>
+<li> Création d'un projet Spring Boot</li>
+<li> Création des entités JPA : Customer, BankAccount, Saving Account, CurrentAccount, AccountOperation</li>
+<li> Création des interfaces JPA Repository basées sur Spring Data</li>
+<li> Le Test de la couche DAO</li>
 </ol>
 <img src="images/arc.png">
 <h2> Les stratégies de mapping</h2>

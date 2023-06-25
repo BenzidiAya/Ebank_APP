@@ -5,11 +5,11 @@ comptes, la gestion des clients, ainsi que les opérations financières telles q
 </p>
 
 <ol>
-<li>1. Création d'un projet Angular</li>
-<li>2. Création des composants : Navbar, Customers, Accounts, New-customer, Customer-accounts</li>
-<li>3. Création des models : Customer.model.ts, Account.model.ts</li>
-<li>4. Création des Services pour les Clients et les comptes : Customers.service, Accounts.service</li>
-<li>5. La définition des routes dans app-routing.module.ts</li>
+<li> Création d'un projet Angular</li>
+<li> Création des composants : Navbar, Customers, Accounts, New-customer, Customer-accounts</li>
+<li> Création des models : Customer.model.ts, Account.model.ts</li>
+<li> Création des Services pour les Clients et les comptes : Customers.service, Accounts.service</li>
+<li> La définition des routes dans app-routing.module.ts</li>
 </ol>
 <img src="images/arc.png">
 <h2>Partie 1 : Customers</h2>
