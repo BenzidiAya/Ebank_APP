@@ -19,7 +19,7 @@ comptes, la gestion des clients, ainsi que les opérations financières telles q
 <p>Cette partie permet d'afficher la liste des clients déjà enregistrés. Elle inclut un champ de recherche qui permet de filtrer les clients en fonction de mots-clés.Pour chaque client, un tableau contenant des informations telles que l'identifiant, le nom et l'adresse e-mail. En outre, trois boutons sont mis à disposition pour supprimer le client ,modifier ,ou accéder à ses comptes.</p>
 <img src="images/p2i5.png">
 <img src="images/p1i2searchcustomer.png">
-h3>Ajout de nouveaux clients</h3>
+<h3>Ajout de nouveaux clients</h3>
 <img src="images/p1i4newcustomer.png">
 <img src="images/p1i5.png">
 
