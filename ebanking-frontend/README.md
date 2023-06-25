@@ -1,27 +1,41 @@
-# EbankingFrontend
+<h1>Frontend de l'application</h1>
+<p>Le présent rapport décrit la partie frontend de l'application web "EBanking" qui a été conçue avec le framework Angular.<br>
+Cette application offre diverses fonctionnalités pour la gestion des opérations bancaires en ligne, notamment la consultation des
+comptes, la gestion des clients, ainsi que les opérations financières telles que le débit, le crédit et le transfert.
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+<ol>
+<li>1. Création d'un projet Angular</li>
+<li>2. Création des composants : Navbar, Customers, Accounts, New-customer, Customer-accounts</li>
+<li>3. Création des models : Customer.model.ts, Account.model.ts</li>
+<li>4. Création des Services pour les Clients et les comptes : Customers.service, Accounts.service</li>
+<li>5. La définition des routes dans app-routing.module.ts</li>
+</ol>
+<img src="images/arc.png">
+<h2>Partie 1 : Customers</h2>
+<p>La partie "Customers" se compose de deux parties distinctes : la première dédiée à la consultation des clients déjà existants, et la seconde à l'ajout de nouveaux clients </p>
+<img src="images/p1i3.png">
+<h3>Consultation des clients</h3>
+<p>Cette partie permet d'afficher la liste des clients déjà enregistrés. Elle inclut un champ de recherche qui permet de filtrer les clients en fonction de mots-clés.Pour chaque client, un tableau contenant des informations telles que l'identifiant, le nom et l'adresse e-mail. En outre, trois boutons sont mis à disposition pour supprimer le client ,modifier ,ou accéder à ses comptes.</p>
+<img src="images/p2i5.png">
+<img src="images/p1i2searchcustomer.png">
+h3>Ajout de nouveaux clients</h3>
+<img src="images/p1i4newcustomer.png">
+<img src="images/p1i5.png">
 
-## Development server
+<h2>Partie 2 : Accounts</h2>
+<p>La partie "Accounts" permet de consulter les informations d'un compte spécifique et d'effectuer des opérations financières(Débit,Crédit et Transfert).</p>
+<h3>Consultation d'un compte </h3>
+<img src="images/p2i2.png">
+<img src="images/p2i1accounts.png">
+<h3>Les opérations financières</h3>
+<h3>Débit</h3>
+<img src="images/p2i3debit.png">
+<h3>Crédit</h3>
+<img src="images/p2i4creditpng.png">
+<h3>Transfert</h3>
+<img src="images/p2i4transfer.png">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
