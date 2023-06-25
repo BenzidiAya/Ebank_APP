@@ -175,9 +175,7 @@ public class BankAccountServiceImpl implements BankAccountService{
     @Override
     public List<AccountOperationDTO> accountHistory(String accountId) {
         List<AccountOperation> accountOperations = accountOperationRepository.findByBankAccountId(accountId);
-        return accountOperations.stream()
-                .map(accountOperation -> customerMapper.fromAccountOperation(accountOperation))
-                .collect(Collectors.toList());
+        return accountOperations.stream().map(accountOperation -> customerMapper.fromAccountOperation(accountOperation)).collect(Collectors.toList());
     }
 
     @Override
@@ -187,10 +185,7 @@ public class BankAccountServiceImpl implements BankAccountService{
             throw new BankAccountNotFoundException("BankAccount not found!");
         Page<AccountOperation> accountOperations = accountOperationRepository.findByBankAccountIdOrderByOperationDateDesc(accountId, PageRequest.of(page, size));
         AccountHistoryDTO accountHistoryDTO = new AccountHistoryDTO();
-        List<AccountOperationDTO> accountOperationDTOS = accountOperations.getContent()
-                .stream()
-                .map(accountOperation -> customerMapper.fromAccountOperation(accountOperation))
-                .collect(Collectors.toList());
+        List<AccountOperationDTO> accountOperationDTOS = accountOperations.getContent().stream().map(accountOperation -> customerMapper.fromAccountOperation(accountOperation)).collect(Collectors.toList());
         accountHistoryDTO.setAccountOperationDTOS(accountOperationDTOS);
         accountHistoryDTO.setAccountId(bankAccount.getId());
         accountHistoryDTO.setBalance(bankAccount.getBalance());
@@ -203,9 +198,7 @@ public class BankAccountServiceImpl implements BankAccountService{
     @Override
     public List<CustomerDTO> searchCustomers(String keyword) {
         List<Customer> customer = customerRepository.searchCustomer(keyword);
-        List<CustomerDTO> collectCustomers = customer.stream()
-                .map(cus -> customerMapper.fromCustomer(cus))
-                .collect(Collectors.toList());
+        List<CustomerDTO> collectCustomers = customer.stream().map(cus -> customerMapper.fromCustomer(cus)).collect(Collectors.toList());
         return collectCustomers;
     }
 }
